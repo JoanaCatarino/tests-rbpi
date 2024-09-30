@@ -14,10 +14,33 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Widget(object):
     def setupUi(self, Widget):
         Widget.setObjectName("Widget")
-        Widget.resize(479, 260)
+        Widget.resize(746, 617)
         self.pushButton = QtWidgets.QPushButton(Widget)
-        self.pushButton.setGeometry(QtCore.QRect(100, 100, 241, 24))
+        self.pushButton.setGeometry(QtCore.QRect(10, 40, 241, 24))
         self.pushButton.setObjectName("pushButton")
+        self.label = QtWidgets.QLabel(Widget)
+        self.label.setGeometry(QtCore.QRect(20, 90, 31, 16))
+        self.label.setObjectName("label")
+        self.lineEdit = QtWidgets.QLineEdit(Widget)
+        self.lineEdit.setGeometry(QtCore.QRect(60, 90, 131, 22))
+        self.lineEdit.setObjectName("lineEdit")
+        self.radioButton = QtWidgets.QRadioButton(Widget)
+        self.radioButton.setGeometry(QtCore.QRect(30, 150, 89, 20))
+        self.radioButton.setObjectName("radioButton")
+        self.checkBox = QtWidgets.QCheckBox(Widget)
+        self.checkBox.setGeometry(QtCore.QRect(30, 180, 76, 20))
+        self.checkBox.setObjectName("checkBox")
+        self.comboBox = QtWidgets.QComboBox(Widget)
+        self.comboBox.setGeometry(QtCore.QRect(340, 40, 191, 22))
+        self.comboBox.setObjectName("comboBox")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.widget = QtWidgets.QWidget(Widget)
+        self.widget.setGeometry(QtCore.QRect(330, 110, 341, 251))
+        self.widget.setStyleSheet("\n"
+"background-color: rgb(189, 189, 189);")
+        self.widget.setObjectName("widget")
 
         self.retranslateUi(Widget)
         QtCore.QMetaObject.connectSlotsByName(Widget)
@@ -26,6 +49,12 @@ class Ui_Widget(object):
         _translate = QtCore.QCoreApplication.translate
         Widget.setWindowTitle(_translate("Widget", "Widget"))
         self.pushButton.setText(_translate("Widget", "Press me !!"))
+        self.label.setText(_translate("Widget", "Text"))
+        self.radioButton.setText(_translate("Widget", "Sound "))
+        self.checkBox.setText(_translate("Widget", " light"))
+        self.comboBox.setItemText(0, _translate("Widget", "option 1"))
+        self.comboBox.setItemText(1, _translate("Widget", "option 2"))
+        self.comboBox.setItemText(2, _translate("Widget", "option 3"))
 
 
 if __name__ == "__main__":
