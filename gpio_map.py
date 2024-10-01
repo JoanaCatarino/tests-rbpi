@@ -9,4 +9,4 @@ from gpiozero import LED
 
 led = LED(22)
 
-__all__ = ['blueLED']
+__all__ = ['led']

@@ -19,8 +19,8 @@ class Functions:
         
         # initialize components:
         self.populate_dropdown()
-        self.ui.checkButton.clicked.connect(blueLED())
-        self.ui.radioBox.clicked.connect(white_noise())
+        self.ui.checkButton.clicked.connect(blueLED)
+        self.ui.radioBox.clicked.connect(white_noise)
         self.ui.pushButton.clicked.connect(self.press())
         #self.ui.lineEdit.returnPressed.connect(self.print_text)
         
