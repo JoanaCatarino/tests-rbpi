@@ -21,7 +21,7 @@ class Functions:
         self.populate_dropdown()
         self.ui.checkBox.clicked.connect(blueLED)
         self.ui.radioButton.clicked.connect(white_noise)
-        self.ui.pushButton.clicked.connect(self.press())
+        self.ui.pushButton.clicked.connect(lambda:self.press())
         #self.ui.lineEdit.returnPressed.connect(self.print_text)
         
     def populate_dropdown(self):
