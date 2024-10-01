@@ -18,8 +18,8 @@ class Widget(QWidget):
         self.ui = Ui_Widget()
         self.ui.setupUi(self)
 
-    # Initialize the different controls in the gui    
-    self.controls = Functions(self.ui)
+        # Initialize the different controls in the gui    
+        self.controls = Functions(self.ui)
 
 
 if __name__ == "__main__":

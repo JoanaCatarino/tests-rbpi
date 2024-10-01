@@ -6,9 +6,9 @@ Created on Tue Oct  1 14:45:06 2024
 """
 
 from gpio_map import *
-import asyncio
+from time import sleep
 
-async def blueLED():
-    blueLED.on()
-    await asyncio.sleep(1)
-    blueLED.off()
+def blueLED():
+    led.on()
+    sleep(1)
+    led.off()
