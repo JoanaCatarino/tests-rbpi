@@ -22,6 +22,7 @@ class Functions:
         self.ui.checkButton.clicked.connect(blueLED())
         self.ui.radioBox.clicked.connect(white_noise())
         self.ui.pushButton.clicked.connect(self.press())
+        #self.ui.lineEdit.returnPressed.connect(self.print_text)
         
     def populate_dropdown(self):
         # Populate the dropdown menu for Animal_ID
@@ -30,3 +31,7 @@ class Functions:
             
     def press(self):
         print('Pressed!')        
+        
+    #def print_text(self):
+        #text = self.ui.lineEdit.text()
+        #print(text)
